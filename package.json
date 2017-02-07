@@ -33,6 +33,7 @@
     "jsdoc": "jsdoc proxy.js -d docs/",
     "lint": "eslint *.js",
     "test": "eslint *.js && mocha *.test.js",
-    "release": "node node_modules/node-release/Release.js -p `pwd` --build 'npm run jsdoc && npm run test'"
+    "build": "npm run jsdoc; npm run test",
+    "release": "node node_modules/node-release/Release.js -p `pwd` --build 'npm run build'"
   }
 }
