@@ -1,7 +1,7 @@
 {
   "name": "node-slow-caching-proxy",
   "description": "hoxy based slow, caching http/s proxy",
-  "version": "1.0.0",
+  "version": "1.0.1-SNAPSHOT",
   "license": "MIT",
   "main": "./proxy.js",
   "author": {
