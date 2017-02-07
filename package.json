@@ -1,0 +1,38 @@
+{
+  "name": "node-slow-caching-proxy",
+  "description": "hoxy based slow, caching http/s proxy",
+  "version": "1.0.0-SNAPSHOT",
+  "license": "MIT",
+  "main": "./proxy.js",
+  "author": {
+    "name": "Eugene Rachitskiy",
+    "email": "eugene@rachitskiy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ProfessorEugene/node-slow-caching-proxy.git"
+  },
+  "dependencies": {
+    "hoxy": "^3.2.1"
+  },
+  "devDependencies": {
+    "node-release": "pulsepointinc/node-release#node-release-1.0.3",
+    "freeport-async": "ProfessorEugene/freeport-async#93e26e3",
+    "tiny-tim": "0.0.4",
+    "temp": "0.8.3",
+    "chai": "3.3.0",
+    "mocha": "3.2.0",
+    "eslint": "3.15.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-jsx-a11y": "3.0.2",
+    "eslint-plugin-react": "6.9.0",
+    "eslint-plugin-import": "2.2.0",
+    "jsdoc": "3.4.3"
+  },
+  "scripts": {
+    "jsdoc": "jsdoc proxy.js -d docs/",
+    "lint": "eslint *.js",
+    "test": "eslint *.js && mocha *.test.js",
+    "release": "node node_modules/node-release/Release.js -p `pwd` --build 'npm run jsdoc && npm run test'"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": "airbnb",
+  "env": {
+    "mocha": true,
+    "browser": false
+  },
+  "rules": {
+    "indent": [2, 4],
+    "no-underscore-dangle": [2, { "allow": ["_server"] }]
+  }
+}
